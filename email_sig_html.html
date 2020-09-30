@@ -1,3 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Dark/Light Mode detection for displaying main logo. -->
+<style>
+	@media (prefers-color-scheme: light) {
+		.darkLogoDefault,
+		.lightLogo {
+			display: none !important;
+		}
+
+		.darkLogoWrapper,
+		.darkLogo {
+			display: block !important;
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.darkLogoDefault,
+		.darkLogo {
+			display: none !important;
+		}
+
+		.lightLogoWrapper,
+		.lightLogo {
+			display: block !important;
+		}
+	}
+</style>
+</head>
+<body>
+
+
 <table style="font-family:Avenir;" cellpadding="0" cellspacing="0">
   <tbody>
     <tr>
@@ -41,21 +74,24 @@
         <span><a href="http://www.samsonvt.com" target="_blank" rel="noopener">
             <!--<img border="0" width="128px" height="32px" alt="SamsonVT log with text" style="border:0; height=32px, width=128px" src="https://raw.githubusercontent.com/jamesrynn/emailsig/master/svt_logo_text.png">--?
             <!-- Default logo with 3-pixel wide background-matching border -->
-            <image width="128px" height="32px" alt="SamsonVT log with text" style="border:0; height=32px, width=128px" src="https://raw.githubusercontent.com/jamesrynn/emailsig/master/svt_logo_text.png" class="darkLogoDefault"/>
+            <image width="128px" height="32px" alt="SamsonVT logo with text" style="border:0; height=32px, width=128px" src="https://raw.githubusercontent.com/jamesrynn/emailsig/master/svt_text_dark_for_light.png" class="darkLogoDefault"/>
 
             <!-- Light theme (so dark logo):
             This is for Apple Mail, Outlook on macOS, Outlook.com -->
             <div class="darkLogoWrapper" style="mso-hide: all; display: none">
-            	<image src="dark-logo.png" class="darkLogo" style="display: none" />
+            	<image width="128px" height="32px" alt="SamsonVT logo with text" src="https://raw.githubusercontent.com/jamesrynn/emailsig/master/svt_text_dark_for_light.png" class="darkLogo" style="display: none" />
             </div>
 
-            <!-- Dark theme (so light logo): 
+            <!-- Dark theme (so light logo):
             This is for Apple Mail, Outlook on macOS, Outlook.com -->
             <div class="lightLogoWrapper" style="mso-hide: all; display: none">
-            	<image src="light-logo.png" class="lightLogo" style="display: none" />
+            	<image width="128px" height="32px" alt="SamsonVT logo with text" src="https://raw.githubusercontent.com/jamesrynn/emailsig/master/svt_text_light_for_dark.png" class="lightLogo" style="display: none" />
             </div>
         </a></span>
       </td>
     </tr>
   </tbody>
 </table>
+
+</body>
+</html>
